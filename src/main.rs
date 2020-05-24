@@ -43,7 +43,7 @@ impl Widget<String> for CustomWidget {
             x_rotation: 0.0,
         };
 
-        let path = BezPath::from_vec(arc.append_iter(1e-12).collect());
+        let path = BezPath::from_vec(arc.append_iter(1e-9).collect());
         let color = Color::WHITE;
         ctx.stroke(path, &color, 6.0);
     }
